@@ -43,8 +43,9 @@ video {
 // base rules
 // ==================================== */
 
-div {
+.row div {
   background: lightgray;
   border: 0.5px blue solid;
   margin-top: 30px;
+  padding: 20px;
 }
