@@ -1,0 +1,19 @@
+.choice-button {
+  border: 1px solid #a77fd0;
+  border-radius: 30px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.all-choice-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.choice-button img {
+  margin-left: 10px;
+}

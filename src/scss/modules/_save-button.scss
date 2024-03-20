@@ -1,0 +1,43 @@
+.save-button {
+  border: 2px dashed #a77fd0;
+  border-radius: 40px;
+  padding: 3.5px 17px;
+  font-size: 18px;
+}
+
+.save-button img,
+.load-button img {
+  max-width: 25px;
+  margin-left: 10px;
+}
+
+.code-button input {
+  border: dashed #a77fd0;
+  border-width: 2px 0px 2px 2px;
+  border-radius: 25px 0px 0px 25px;
+  padding: 7px 17px;
+  font-size: 16px;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.load-button {
+  border: 1px solid #a77fd0;
+  background: #e6daf2;
+  border-radius: 0px 25px 25px 0px;
+  padding: 7px 40px 7px 17px;
+  font-size: 18px;
+  display: inline-flex;
+  height: 36.5px;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.load-defi-button {
+  display: flex;
+  justify-content: end;
+}
+
+.section-save {
+  margin-top: 45px;
+}
