@@ -1,0 +1,28 @@
+.times label {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+  width: 50%;
+}
+
+.times {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radio-placeholder {
+  display: inline-block; /* pour que le div soit à côté du texte */
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  border: 1px solid #25084b;
+  background: #e6daf2;
+}
+
+input:checked + .radio-placeholder {
+  border: 6px solid #25084b;
+}
+
+.times label input {
+  display: none;
+}
