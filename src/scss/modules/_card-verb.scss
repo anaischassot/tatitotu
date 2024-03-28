@@ -1,0 +1,65 @@
+.delete-text,
+.select-text {
+  position: relative;
+}
+
+.delete-text p,
+.select-text p {
+  position: absolute;
+  right: 0;
+  font-style: italic;
+}
+
+.select-text p {
+  left: 0;
+}
+
+.card-verb-add {
+  position: relative;
+  width: 50%;
+}
+
+.card-verb-add input {
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-family: jost;
+  font-weight: 300;
+  width: 100%;
+}
+
+.card-verb-add img {
+  padding: 5px 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 35px;
+  margin: auto;
+}
+
+.verb-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: inline-flex;
+}
+
+.verb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 15px;
+  border-radius: 10px;
+  border: 1px solid #25084b;
+  background: #e6daf2;
+  margin-top: 15px;
+  color: #25084b;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  width: 30%;
+}
