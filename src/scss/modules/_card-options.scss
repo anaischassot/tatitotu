@@ -1,0 +1,52 @@
+.card-options {
+  width: 100%;
+}
+
+.choice-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-bottom: 15px;
+}
+
+.number {
+  background: #faf5ff;
+  border-radius: 10px;
+  border: 0.8px solid #25084b;
+  padding: 10px 5px;
+  font-weight: 200;
+  margin-inline: 10px;
+}
+
+.normal-button {
+  background: #faf5ff;
+  border: 1px solid #25084b;
+  border-radius: 10px 0px 0px 10px;
+  padding: 7px 20px;
+  font-size: 16px;
+  font-weight: 300;
+  display: inline-flex;
+  height: 40px;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.special-button {
+  border: 1px solid #25084b;
+  background: #25084b;
+  color: #faf5ff;
+  border-radius: 0px 10px 10px 0px;
+  padding: 7px 20px;
+  font-size: 16px;
+  font-weight: 300;
+  display: inline-flex;
+  height: 40px;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.type-button {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 15px;
+}
