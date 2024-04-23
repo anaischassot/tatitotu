@@ -5,12 +5,6 @@
   font-size: 18px;
 }
 
-.save-button img,
-.load-button img {
-  max-width: 25px;
-  margin-left: 10px;
-}
-
 .code-button input {
   border: dashed #a77fd0;
   border-width: 2px 0px 2px 2px;
@@ -41,4 +35,20 @@
 
 .section-save {
   margin-top: 45px;
+}
+
+.save-button:hover {
+  background-color: #25084b;
+  color: #fff;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.code-button:hover {
+  border: 2px solid #a77fd0;
+  border-radius: 25px 0px 0px 25px;
+}
+
+.load-button:hover {
+  background: #ccb3e5;
+  transition: background-color 0.3s;
 }

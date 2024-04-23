@@ -16,7 +16,7 @@
 
 .card-verb-add {
   position: relative;
-  width: 50%;
+  width: 55%;
 }
 
 .card-verb-add input {
@@ -62,4 +62,16 @@
   font-size: 20px;
   font-weight: 300;
   width: 30%;
+}
+
+@media (max-width: 1200px) {
+  .verb {
+    font-size: 17px;
+    padding: 10px 50px;
+  }
+}
+
+.verb:hover {
+  background-color: #ccb3e5;
+  transition: background-color 0.3s;
 }

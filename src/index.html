@@ -18,7 +18,7 @@
         <div class="col-2 logo">
           <img src="../img/logo.svg" alt="Logo Tatitotu" />
         </div>
-        <div class="col-4 offset-6 all-choice-button">
+        <div class="col-6 offset-6 all-choice-button">
           <div class="choice-button">
             <a href="#"
               >exercer
@@ -121,12 +121,13 @@
             </div>
             <div class="card-verb-add">
               <input
-                class="add-verb"
+                class="textfield"
                 type="text"
                 id="add-verb"
                 name="add-verb"
                 placeholder="Ajouter un verbe"
               />
+              <div class="suggestions"></div>
               <img src="../img/add.svg" alt="Un +." />
             </div>
             <div class="verb-list">
@@ -170,21 +171,117 @@
           </div>
           <h2>les options</h2>
           <div class="card card-options">
-            <h4>Nombre de questions</h4>
-            <div class="choice-number">
-              <div class="number">05</div>
-              <div class="number">10</div>
-              <div class="number">20</div>
-              <div class="number">30</div>
-              <div class="number">40</div>
-              <div class="number">50</div>
+            <div class="option">
+              <h4>Nombre de questions</h4>
+              <div class="choice-number">
+                <div class="number">05</div>
+                <div class="number">10</div>
+                <div class="number">20</div>
+                <div class="number">30</div>
+                <div class="number">40</div>
+                <div class="number">50</div>
+              </div>
             </div>
-            <h4>Type</h4>
-            <div class="type-button">
-              <div class="normal-button">Normal</div>
-              <div class="special-button">Trouver mode + temps</div>
+            <div class="option">
+              <h4>Type</h4>
+              <div class="type-button">
+                <div class="normal-button">Normal</div>
+                <div class="special-button">Trouver mode + temps</div>
+              </div>
             </div>
-            <h4>Options d'impression</h4>
+            <div class="option-print">
+              <h4>Options d'impression</h4>
+              <label class="switch">
+                <input type="checkbox" />
+                <div class="switch-wrapper">
+                  <div class="switch-inner"></div>
+                </div>
+              </label>
+            </div>
+            <div class="hidden-options">
+              <div class="option-print">
+                <p>Titre</p>
+                <input
+                  class="title"
+                  type="text"
+                  id="title"
+                  name="title"
+                  placeholder="Défi de conjugaison"
+                />
+              </div>
+              <div class="option-print">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <div class="switch-wrapper">
+                    <div class="switch-inner"></div>
+                  </div>
+                </label>
+                <p>Afficher espacer pour la note</p>
+              </div>
+              <div class="option-print">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <div class="switch-wrapper">
+                    <div class="switch-inner"></div>
+                  </div>
+                </label>
+                <p>Afficher les verbes évalués</p>
+              </div>
+              <div class="option-print">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <div class="switch-wrapper">
+                    <div class="switch-inner"></div>
+                  </div>
+                </label>
+                <p>Afficher les temps évalués</p>
+              </div>
+              <div class="option-print">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <div class="switch-wrapper">
+                    <div class="switch-inner"></div>
+                  </div>
+                </label>
+                <p>Afficher espace pour le prénom</p>
+              </div>
+              <div class="option-print">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <div class="switch-wrapper">
+                    <div class="switch-inner"></div>
+                  </div>
+                </label>
+                <p>Afficher espace pour le nom</p>
+              </div>
+              <div class="option-print">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <div class="switch-wrapper">
+                    <div class="switch-inner"></div>
+                  </div>
+                </label>
+                <p>Afficher espace pour la date</p>
+              </div>
+              <div class="option-print">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <div class="switch-wrapper">
+                    <div class="switch-inner"></div>
+                  </div>
+                </label>
+                <p>Afficher les prénoms inclusifs (il/elle/iel)</p>
+              </div>
+              <div class="option-print">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <div class="switch-wrapper">
+                    <div class="switch-inner"></div>
+                  </div>
+                </label>
+                <p>Afficher nombre aléatoire</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-5">
@@ -333,16 +430,21 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h4>contactez-moi !</h4>
-          <a href="mailto:christophe.roulet@edu-vd.ch"
-            >christophe.roulet@edu-vd.ch</a
-          >
+    <footer>
+      <div class="container footer">
+        <div class="row">
+          <div class="col-5">
+            <h3>contactez-moi !</h3>
+          </div>
+          <div class="offset-1 col-6">
+            <a href="mailto:christophe.roulet@edu-vd.ch"
+              >christophe.roulet@edu-vd.ch</a
+            >
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
+
     <script src="js/main.js" type="module"></script>
   </body>
 </html>

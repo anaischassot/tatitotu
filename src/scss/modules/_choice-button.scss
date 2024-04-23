@@ -14,6 +14,8 @@
   justify-content: flex-end;
 }
 
-.choice-button img {
-  margin-left: 10px;
+.choice-button:hover {
+  background-color: #25084b;
+  color: #fff;
+  transition: background-color 0.4s, color 0.4s;
 }
