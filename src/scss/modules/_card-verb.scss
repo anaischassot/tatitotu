@@ -27,7 +27,7 @@
   width: 100%;
 }
 
-.card-verb-suggestions:active {
+.card-verb-suggestions:not(:empty) {
   position: absolute;
   top: 100%;
   background: #faf5ff;
