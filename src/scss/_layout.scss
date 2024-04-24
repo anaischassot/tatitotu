@@ -1,24 +1,28 @@
-.option-print p,
-.option-print h4,
-.card-options label {
-  margin-right: 40px;
-}
-
-.choice-button img {
-  margin-left: 10px;
-}
-
-.logo {
+.l-logo {
   padding: 0;
 }
 
-.logo img {
+.l-logo img {
   max-height: 30px;
   max-width: 182px;
 }
 
-.save-button img,
-.load-button img {
-  max-width: 25px;
-  margin-left: 10px;
+.l-options {
+  width: 100%;
+}
+
+.l-options label {
+  margin-right: 40px;
+}
+
+.l-options input {
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: 1px solid #25084b;
+  font-size: 16px;
+  font-family: jost;
+  font-weight: 300;
+  text-align: center;
+  width: 40%;
+  text-transform: uppercase;
 }
