@@ -1,17 +1,17 @@
-.times label {
+.card-times label {
   font-size: 20px;
   font-weight: 300;
   line-height: normal;
   width: 50%;
 }
 
-.times {
+.card-times {
   display: flex;
   flex-wrap: wrap;
 }
 
-.radio-placeholder {
-  display: inline-block; /* pour que le div soit à côté du texte */
+.card-times-radio-placeholder {
+  display: inline-block;
   width: 18px;
   height: 18px;
   border-radius: 3px;
@@ -19,10 +19,26 @@
   background: #e6daf2;
 }
 
-input:checked + .radio-placeholder {
+input:checked + .card-times-radio-placeholder {
   border: 6px solid #25084b;
 }
 
-.times label input {
+.card-times label input {
   display: none;
+}
+
+.card-times-text-uncheck,
+.card-times-text-select {
+  position: relative;
+}
+
+.card-times-text-uncheck p,
+.card-times-text-select p {
+  position: absolute;
+  right: 0;
+  font-style: italic;
+}
+
+.card-times-text-select p {
+  left: 0;
 }

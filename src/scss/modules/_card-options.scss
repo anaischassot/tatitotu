@@ -1,136 +1,138 @@
 .card-options {
-  width: 100%;
-}
-
-.option {
-  display: flex;
   justify-content: space-between;
 }
 
-.choice-number {
-  display: flex;
-  flex-direction: row;
+.card-options-number-choice {
   justify-content: end;
   margin-bottom: 20px;
 }
 
-.number {
-  background: #faf5ff;
-  border-radius: 10px;
+.card-options,
+.card-options-number-choice,
+.card-options-button-type,
+.card-options-print {
+  display: flex;
+}
+
+.card-options-number {
   border: 0.8px solid #25084b;
   padding: 5px;
   font-weight: 200;
   margin-inline: 10px;
 }
 
-.number:hover {
-  background-color: #e6daf2;
+.card-options-number:hover {
   font-weight: 400;
   transition: background-color 0.3s, font-weight 0.3s;
 }
 
-.normal-button {
-  background: #faf5ff;
-  border: 1px solid #25084b;
+.card-options-button-normal {
   border-radius: 10px 0px 0px 10px;
-  padding: 7px 20px;
-  font-size: 16px;
-  font-weight: 300;
-  display: inline-flex;
-  height: 40px;
-  white-space: nowrap;
-  align-items: center;
 }
 
-.normal-button:hover {
-  background-color: #25084b;
-  color: #faf5ff;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-.normal-button:hover + .special-button {
-  background-color: #faf5ff;
-  color: #25084b;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-.special-button {
-  border: 1px solid #25084b;
-  background: #25084b;
-  color: #faf5ff;
+.card-options-button-special {
   border-radius: 0px 10px 10px 0px;
-  padding: 7px 20px;
-  font-size: 16px;
-  font-weight: 300;
+}
+
+.card-options-button-normal,
+.card-options-button-special {
   display: inline-flex;
+  font-size: 16px;
+  align-items: center;
+  padding: 7px 20px;
   height: 40px;
   white-space: nowrap;
-  align-items: center;
 }
 
-.type-button {
-  display: flex;
+.card-options-print input,
+.card-options-number,
+.card-options-button-normal,
+.card-options-button-normal:hover + .card-options-button-special {
+  background-color: #faf5ff;
+}
+
+.card-options-button-normal:hover,
+.card-options-button-normal:hover + .card-options-button-special {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.card-options-button-normal:hover + .card-options-button-special {
+  color: #25084b;
+}
+
+.card-options-button-normal:hover,
+.card-options-button-special {
+  color: #faf5ff;
+}
+
+.card-options-button-type {
   justify-content: end;
+}
+
+.card-options-button-type,
+.card-options-print {
   margin-bottom: 20px;
 }
 
-.option-print {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.option-print p {
+.card-options-button-normal,
+.card-options-button-special,
+.card-options-print p {
   font-weight: 300;
 }
 
-.switch-wrapper {
+.card-options-print p,
+.card-options-print h4 {
+  margin-right: 40px;
+}
+
+.card-options-switch-wrapper {
   display: inline-block;
   width: 35px;
   height: 20px;
   padding: 2px;
-  border: 1px solid #25084b;
-  border-radius: 10px;
-  background: #e6daf2;
   transition: background-color 0.3s;
 }
 
-.switch-inner {
+.card-options-number,
+.card-options-switch-wrapper {
+  border-radius: 10px;
+}
+
+.card-options-switch-inner {
   width: 15px;
   height: 15px;
   border-radius: 8px;
-  background: #25084b;
   transition: margin 0.3s, background-color 0.3s;
 }
 
-input:checked + .switch-wrapper .switch-inner {
+input:checked + .card-options-switch-wrapper .card-options-switch-inner {
   margin-left: 14px;
-  background: #e6daf2;
 }
 
-input:checked + .switch-wrapper {
-  background: #25084b;
+.card-options-button-normal:hover,
+.card-options-button-special,
+.card-options-switch-inner,
+input:checked + .card-options-switch-wrapper {
+  background-color: #25084b;
 }
 
-.switch input {
+.card-options-switch input,
+.card-options-hidden {
   display: none;
 }
 
-.card-options input {
-  padding: 5px 20px;
-  border-radius: 10px;
+.card-options-hidden.is-active {
+  display: block;
+}
+
+.card-options-number:hover,
+.card-options-switch-wrapper,
+input:checked + .card-options-switch-wrapper .card-options-switch-inner {
+  background-color: #e6daf2;
+}
+
+.card-options-button-normal,
+.card-options-button-special,
+.card-options-switch-wrapper {
   border: 1px solid #25084b;
-  font-size: 16px;
-  font-family: jost;
-  font-weight: 300;
-  text-align: center;
-  width: 40%;
-  text-transform: uppercase;
-}
-
-.hidden-options {
-  display: none;
-}
-
-input:checked + .hidden-options {
-  opacity: 1;
 }
