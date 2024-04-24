@@ -1,11 +1,10 @@
-.save-button {
+.header-button-save {
   border: 2px dashed #a77fd0;
   border-radius: 40px;
   padding: 3.5px 17px;
-  font-size: 18px;
 }
 
-.code-button input {
+.header-button-code input {
   border: dashed #a77fd0;
   border-width: 2px 0px 2px 2px;
   border-radius: 25px 0px 0px 25px;
@@ -16,39 +15,45 @@
   display: inline-block;
 }
 
-.load-button {
+.header-button-load {
   border: 1px solid #a77fd0;
-  background: #e6daf2;
+  background-color: #e6daf2;
   border-radius: 0px 25px 25px 0px;
   padding: 7px 40px 7px 17px;
-  font-size: 18px;
   display: inline-flex;
   height: 36.5px;
   white-space: nowrap;
   align-items: center;
 }
 
-.load-defi-button {
+.header-button-save,
+.header-button-load {
+  font-size: 18px;
+}
+
+.header-button-load-defi {
   display: flex;
   justify-content: end;
 }
 
-.section-save {
-  margin-top: 45px;
+.header-button-save img,
+.header-button-load img {
+  max-width: 25px;
+  margin-left: 10px;
 }
 
-.save-button:hover {
+.header-button-save:hover {
   background-color: #25084b;
   color: #fff;
   transition: background-color 0.4s, color 0.4s;
 }
 
-.code-button:hover {
+.header-button-code input:hover {
   border: 2px solid #a77fd0;
-  border-radius: 25px 0px 0px 25px;
+  transition: border 0.3s;
 }
 
-.load-button:hover {
-  background: #ccb3e5;
+.header-button-load:hover {
+  background-color: #ccb3e5;
   transition: background-color 0.3s;
 }

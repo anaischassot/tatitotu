@@ -1,4 +1,4 @@
-.choice-button {
+.principal-button-choice {
   border: 1px solid #a77fd0;
   border-radius: 30px;
   padding: 5px 20px;
@@ -8,13 +8,18 @@
   margin-left: 20px;
 }
 
-.all-choice-button {
+.principal-button-choice img {
+  margin-left: 10px;
+}
+
+.principal-button-choice-all {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  margin-bottom: 45px;
 }
 
-.choice-button:hover {
+.principal-button-choice:hover {
   background-color: #25084b;
   color: #fff;
   transition: background-color 0.4s, color 0.4s;
