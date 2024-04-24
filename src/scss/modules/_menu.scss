@@ -1,83 +1,66 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.burger {
-  position: fixed;
+.menu-burger {
   top: 30px;
   right: 70px;
-  z-index: 1; /* permet de faire passer le lien devant le menu */
+  z-index: 1;
   width: 30px;
   height: 19px;
 }
 
+.menu-burger,
 .menu {
   position: fixed;
-  top: 0;
+}
+
+.menu {
   right: 0;
   bottom: 0;
   left: 0;
   padding: 50px;
-  background: #e6daf2;
-  opacity: 0; /* par défaut, le menu a une opacité de 0 */
-  pointer-events: none; /* par défaut, le menu ne peut pas être cliqué */
-  transition: opacity 0.3s; /* on ajoute une transition pour que l'ouverture se fasse de façon fluide */
-  transform: translateX(
-    100%
-  ); /* par défaut, on décale le menu de 100% vers la droite */
-  transition: transform 0.3s; /* on ajoute une transition pour que l'ouverture se fasse de façon fluide */
+  background-color: #e6daf2;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  transition: transform 0.3s;
 }
 
 .menu.is-active {
-  opacity: 1; /* avec la classe is-active, le menu a une opacité de 1 */
-  pointer-events: auto; /* avec la classe is-active, le menu peut être cliqué */
-  transform: translateX(
-    80%
-  ); /* lorsqu'il est ouvert, le menu retrouve sa place originale */
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(80%);
 }
 
-.burger div {
-  position: absolute; /* on utilise une position absolute pour pouvoir ensuite animer facilement chaque barre */
+.menu-burger div {
+  position: absolute;
   width: 100%;
   height: 5px;
   border-radius: 5px;
-  background: #25084b;
-  transition: transform 0.3s, opacity 0.3s; /* on ajoute une transition pour que le changement se fasse de manière fluide */
+  background-color: #25084b;
+  transition: transform 0.3s, opacity 0.3s;
 }
 
-/* on utilise les sélecteurs nth-child pour éviter d'ajouter trop de classes dans le HTML */
-.burger div:nth-child(1) {
+.menu,
+.menu-burger div:nth-child(1) {
   top: 0;
 }
 
-.burger div:nth-child(2) {
+.menu-burger div:nth-child(2) {
   top: 8px;
 }
 
-.burger div:nth-child(3) {
+.menu-burger div:nth-child(3) {
   top: 16px;
 }
 
-.burger.is-active div:nth-child(1) {
+.menu-burger.is-active div:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-.burger.is-active div:nth-child(2) {
+.menu,
+.menu-burger.is-active div:nth-child(2) {
   transform: translateX(100%);
   opacity: 0;
 }
 
-.burger.is-active div:nth-child(3) {
+.menu-burger.is-active div:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
